@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Pre-Advanced 5</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<main class="shop-page">
+		<div class="message none">
+			<p>Вказана кількість продукту перевищує його кількість на складі! Введіть будь-ласка інше значення</p>
+			<button>Зрозуміло</button>
+		</div>
+		<h1 class="page-title">Інтернет-магазин напоїв</h1>
+		<div class="content-wrapper">
+			<sectin class="shop-sections product-information">
+				<div class="info-field">
+					<h4 class="field-heading">Баланс</h4>
+					<div class="field-content balance"><span>1000</span> грн.</div>
+				</div>
+				<div class="info-field">
+					<h4 class="field-heading">Пиво</h4>
+					<div class="field-content beer"><span data-price="32">100</span> шт.</div>
+				</div>
+				<div class="info-field">
+					<h4 class="field-heading">Вино</h4>
+					<div class="field-content wine"><span data-price="80">50</span> шт.</div>
+				</div>
+				<div class="info-field">
+					<h4 class="field-heading">Пепсі</h4>
+					<div class="field-content pepsi"><span data-price="28">80</span> шт.</div>
+				</div>
+			</sectin>
+			<sectin class="shop-sections shop-cart">
+				<form class="add-to-cart" name="addForm">
+					<div class="product-amount">
+						<label for="amount">Кількість</label>
+						<input type="number" id="amount" name="amount" placeholder="Введіть кількість">
+					</div>
+					<div class="product-type">
+						<label for="beer"><input type="radio" name="type" id="beer" value="beer">Пиво</label>
+						<label for="wine"><input type="radio" name="type" id="wine" value="wine">Вино</label>
+						<label for="pepsi"><input type="radio" name="type" id="pepsi" value="pepsi">Пепсі</label>
+					</div>
+					<button class="form-button add-product" name="add">Додати</button>
+				</form>
+				<div class="order">
+					<div class="order-list"></div>
+					<button class="form-button buy" name="buy">Купити</button>
+				</div>
+			</sectin>
+			<sectin class="shop-sections receipt"></sectin>
+		</div>
+	</main>
+
+	<script src="./shop.js" type="module"></script>
+	<script src="./script.js" type="module"></script>
+</body>
+</html>
